@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  website:
+    build: .
+    ports:
+      - "8080:80"  # für nginx mit statischem HTML
+      # oder "5000:5000" für Flask
